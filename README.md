@@ -41,7 +41,7 @@
 
 ## 2. 数据集和复现精度
 
-论文中采用的数据集之一为[DOTA](https://captain-whu.github.io/DOTA/dataset.html)数据集，该数据集为高分辨率的遥感图像，数据集可在官网下载，本repo的复现精度如下：
+论文中采用的数据集之一为[DOTA](https://captain-whu.github.io/DOTA/dataset.html)数据集，该数据集为高分辨率的遥感图像，数据集可在官网下载，本repo的复现精度如下，可下载训练好的模型（链接：https://pan.baidu.com/s/1YX9ttIQsof09fx-Cc-ubcA  提取码：1234） 
 
 注意：训练时采用Train+Val进行训练，测试时需要到官网的[指定入口](http://bed4rs.net:8001/evaluation1)进行提交
 
