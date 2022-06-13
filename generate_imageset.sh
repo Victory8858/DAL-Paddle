@@ -1,0 +1,1 @@
+python datasets/generate_imageset.py --train-img-path="/home/aistudio/work/DAL/tiny_datasetsplit/images"  --val-img-path="/home/aistudio/work/DAL/tiny_datasetsplit/images"   --save-dir="/home/aistudio/work/DAL/tiny_datasetsplit"   --mode="train"

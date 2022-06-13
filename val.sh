@@ -1,0 +1,1 @@
+python val.py --test-path="/home/aistudio/work/DAL/tiny_dataset" --weight-path="/home/aistudio/weights/model_93.pdparams"

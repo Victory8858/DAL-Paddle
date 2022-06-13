@@ -1,0 +1,1 @@
+python train.py --train-path="/home/aistudio/work/DAL/tiny_datasetsplit/train.txt" --test-path="/home/aistudio/work/DAL/tiny_dataset" --save-path="/home/aistudio/work/DAL/log" --ckpt-path="weights" --epochs=10 --batch-size=4 --test_interval=2 --save_interval=5

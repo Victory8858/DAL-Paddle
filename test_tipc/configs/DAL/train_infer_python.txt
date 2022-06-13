@@ -1,0 +1,30 @@
+===========================train_params===========================
+model_name:DAL
+python:python
+gpu_list:0
+use-gpu:True|True
+--epochs:lite_train_lite_infer=4|lite_train_whole_infer=16|whole_train_whole_infer=100
+--ckpt-path:weights
+--batch-size:lite_train_lite_infer=4|whole_train_whole_infer=8
+null:null
+train_model_name:output/model_best
+--data-path:datasets/CUBTINY
+##
+trainer:norm_train
+norm_train:train.py --train-path="tiny_datasetsplit/train.txt" --test-path="tiny_dataset" --save-path="log" --ckpt-path="weights" --test_interval=4 --save_interval=3
+##
+===========================eval_params===========================
+eval:val.py --test-path="tiny_dataset" --weight-path="log/DAL/lite_train_lite_infer/norm_train_gpus_0/last.pdparams"
+##
+===========================infer_params===========================
+null:null
+null:null
+norm_export:export_model.py --model-path="/home/aistudio/weights/model_92.pdparams"
+##
+null:null
+infer_export:export_model.py --model-path="log/DAL/lite_train_lite_infer/norm_train_gpus_0/last.pdparams"
+##
+inference:infer.py --img-path="tiny_datasetsplit/images/P0000__1__2400___3600.png"
+--use-gpu:True
+--batch-size:1
+--benchmark:True
