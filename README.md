@@ -26,8 +26,7 @@
 <div align="center">
     <img src="imgs/anchor.png" width=600">
 </div>
-
-**论文:** [See Better Before Looking Closer: Weakly Supervised Data Augmentation Network for Fine-Grained Visual Classification](https://arxiv.org/pdf/1901.09891.pdf)
+**论文:** [Dynamic Anchor Learning for Arbitrary-Oriented Object Detection](https://arxiv.org/abs/2012.04150)
 
 **参考repo:** [https://github.com/ming71/DAL](https://github.com/ming71/DAL)
 
